@@ -131,7 +131,6 @@ body {
 
 .tab_list {
     position: relative;
-    float: left;
     background-color: #333;
     border-radius: 10px;
     padding: 20px;
@@ -139,8 +138,8 @@ body {
     height: 200px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 8px 8px 15px black;
+    left: calc(25%);
     margin-top: 25%;
-        left: calc(25%);
 }
 
 .tab_list ul {
