@@ -129,21 +129,20 @@ body {
     color: #e74c3c;
 }
 
+
 .tab_list {
     position: relative;
     background-color: #333;
     border-radius: 10px;
-    padding: 20px;
-    width: 175px;
-    height: 200px;
+    padding: 50px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 8px 8px 15px black;
-    left: calc(25%);
     margin-top: 25%;
 }
 
 .tab_list ul {
     list-style: none;
+    margin-left: -20px;
 }
 
 .tab_list li {
