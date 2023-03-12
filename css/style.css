@@ -140,6 +140,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 8px 8px 15px black;
     margin-top: 25%;
+        left: calc(25%);
 }
 
 .tab_list ul {
