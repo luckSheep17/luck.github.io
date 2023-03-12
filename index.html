@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title> Tab List </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .icon-path {
+      animation: icon-path-animation 3s ease-in infinite;
+    }
+
+    .tab_con {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar li {
+      list-style-type: none;
+      display: inline;
+    }
+
+    .nav-slide {
+      padding-left: 0;
+      top: 100px;
+      position: absolute;
+      /* 下拉隐藏 */
+      display: none;
+      background-color: orange;
+      transition: all 0.3s;
+    }
+
+    .nav-slide li {
+      float: left;
+      padding: 15px 10px;
+      box-sizing: border-box;
+    }
+
+    .layout {
+      width: 100%;
+      height: 100%;
+
+      display: grid;
+      grid:
+        "header header header" auto "leftSide body rightSide" 1fr "footer footer footer" auto / auto 1fr auto;
+      gap: 8px;
+    }
+
+    .header {
+      grid-area: header;
+
+    }
+
+    .leftSide {
+      grid-area: leftSide;
+    }
+
+    .body {
+      grid-area: body;
+    }
+
+    .rightSide {
+      grid-area: rightSide;
+    }
+
+    .footer {
+      width: 98%;
+      grid-area: footer;
+      padding: 10px;
+      background-color: #808080;
+      border-radius: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: white;
+      position: fixed;
+      bottom: 0;
+    }
+
+    .footer p {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <div class="header">
+      <ul class="navbar">
+        <li>
+          <a href="#"><span class="Overline">Home</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="Overline">About</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="Overline">Contact</span></a>
+        </li>
+        <!-- 右侧头像 -->
+        <a href="#"><img src="./icon.png" alt="" style="box-shadow: 4px 4px 15px #191919;border-radius: 15px;"></a>
+      </ul>
+    </div>
+    <div class="leftSide">
+      <div class="tab_list">
+        <ul>
+          <li class="current"><a href="#">主页</a></li>
+          <li><a href="#">介绍</a></li>
+          <li><a href="#">评价</a></li>
+          <li><a href="#">登陆</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="body">
+      <div class="tab_con" style="margin-left: 5%;margin-top: 20px">
+        <div class="item" style="display: block">
+          <article class="card">
+            <div class="card-image" style="background-image: url(https://picsum.photos/id/10/800/400)"></div>
+            <div class="card-content">
+              <h2 class="card-title"> - Hey! 这是我的个人主页 </h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi sed
+                nibh tincidunt congue. Proin congue, diam at sollicitudin vestibulum, odio libero rhoncus
+                velit, vel fringilla leo risus vel erat.</p>
+              <div class="card-actions">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <div class="item">
+          <article class="card">
+            <div class="card-image" style="background-image: url(https://picsum.photos/id/20/800/400)"></div>
+            <div class="card-content">
+              <h2 class="card-title"> - 狼行千里吃肉 </h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi sed
+                nibh tincidunt congue. Proin congue, diam at sollicitudin vestibulum, odio libero rhoncus
+                velit, vel fringilla leo risus vel erat.</p>
+              <div class="card-actions">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="item">
+          <article class="card">
+            <div class="card-image" style="background-image: url(https://picsum.photos/id/10/800/400)"></div>
+            <div class="card-content">
+              <h2 class="card-title"> - 操你妈李有坤 </h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi sed
+                nibh tincidunt congue. Proin congue, diam at sollicitudin vestibulum, odio libero rhoncus
+                velit, vel fringilla leo risus vel erat.</p>
+              <div class="card-actions">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="item">
+          <article class="card">
+            <div class="card-image" style="background-image: url(https://picsum.photos/id/20/800/400)"></div>
+            <div class="card-content">
+              <h2 class="card-title"> - 操你妈石肾虚 </h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi sed
+                nibh tincidunt congue. Proin congue, diam at sollicitudin vestibulum, odio libero rhoncus
+                velit, vel fringilla leo risus vel erat.</p>
+              <div class="card-actions">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class='footer'>
+      <p>Copyright © 1999-2018 fuck-you. All rights reserved.</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script>
+    $(".tab_list li").click(function () {
+      $(this).addClass("current").siblings().removeClass("current");
+      var index = $(this).index();
+      console.log(index);
+
+      $(".tab_con .item").eq(index).show().siblings().hide();
+    });
+  </script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* 设置导航栏圆角样式 */
+.navbar {
+    border-radius: 25px;
+    background-color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 20px;
+
+}
+
+.navbar img {
+    float: right;
+    margin-top: -5px;
+    height: 32px;
+    width: 32px;
+}
+
+/* 设置导航栏链接圆角样式 */
+.navbar a {
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.Overline {
+    position: relative;
+}
+
+.Overline::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    background-color: #fc2f70;
+    transform-origin: center;
+    transform: translate(-50%, -2px) scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.Overline:hover::before {
+    transform: translate(-50%, -2px) scaleX(1);
+    opacity: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.card {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-left: -10%;
+}
+
+.card-image {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-text {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px;
+    border-top: 1px solid #eee;
+}
+
+.card-actions a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card-actions a:hover {
+    color: #999;
+}
+
+.card-actions .like-button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.card-actions .like-button .material-icons {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.card-actions .like-button.liked .material-icons {
+    color: #e74c3c;
+}
+
+.tab_list {
+    position: relative;
+    float: left;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 175px;
+    height: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 8px 8px 15px black;
+    margin-left: 100%;
+    margin-top: 25%;
+}
+
+.tab_list ul {
+    list-style: none;
+}
+
+.tab_list li {
+    list-style-type: circle;
+    color: rgba(256, 256, 256, 1);
+}
+
+.tab_list li {
+    padding: 10px;
+    transition: all 0.45s ease;
+
+}
+
+.tab_list a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.tab_list li:hover {
+    list-style-type: disc;
+    color: #191919;
+    transform: translateX(10px);
+}
+
+.item {
+    display: none;
+}
